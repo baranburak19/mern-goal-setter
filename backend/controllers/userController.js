@@ -71,7 +71,7 @@ const loginUser = asyncHandler(async (req, res) => {
 // @route GET /api/users/me
 // @acces Private
 const getMe = asyncHandler(async (req, res) => {
-    res.status(200).json(req.user) // got the user in auth middleware
+    res.status(200).json(req.user) // already got the user in auth middleware
 })
 
 // Generate JWT
