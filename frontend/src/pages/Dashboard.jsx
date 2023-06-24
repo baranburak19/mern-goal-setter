@@ -24,6 +24,7 @@ function Dashboard() {
       console.log(message);
     }
 
+    // Return cleanup function
     return () => {
       dispatch(reset())
     }
